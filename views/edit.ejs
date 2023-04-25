@@ -1,0 +1,10 @@
+<%- include("_header") -%>
+
+<h1>Edit Item</h1>
+
+<form action="/items/<%= model.item.id %>" method="POST">
+  <input type="text" name="name" value="<%= model.item.name %>">
+  <button type="submit">Save</button>
+</form>
+
+<%- include("_footer") -%>
